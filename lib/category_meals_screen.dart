@@ -22,7 +22,9 @@ class CategoryMealsScreen extends StatelessWidget {
         title: Text(_categoryTitle),
       ),
       body: ListView.builder(
-        itemBuilder: ((context, index) {}),
+        itemBuilder: ((ctx, index) {
+          return Text(_categorymeals[index].title);
+        }),
         itemCount: _categorymeals.length,
       ),
     );
